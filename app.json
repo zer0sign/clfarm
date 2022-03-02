@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "CLfarm",
+    "slug": "CLfarm",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
