@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { AppStack } from './AppStackFarmer';
+import { AppStackFarmer } from './AppStackFarmer';
 import { AuthStack } from './AuthStack';
 // import { useAuth } from '../contexts/Auth';
 // import { Loading } from '../components/Loading';
@@ -12,9 +12,12 @@ export const Router = () => {
     // if (loading) {
     //     return <Loading />;
     // }
+
+    const login = false
+
     return (
         <NavigationContainer>
-            <AuthStack/>
+            {login ? <AuthStack /> : <AppStackFarmer/> }
         </NavigationContainer>
     );
 };
