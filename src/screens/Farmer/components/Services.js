@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
-export default function Menu(props) {
+export default function Services(props) {
     return (
         <View>
             <View style={styles.header}>
@@ -20,13 +20,13 @@ export default function Menu(props) {
 
 const styles = StyleSheet.create({
     header: {
-        width:150,
-        padding:10,
-        borderRadius:10,
+        width: 150,
+        padding: 10,
+        borderRadius: 10,
         flexDirection: "row",
-        justifyContent:"space-between"
+        justifyContent: "space-between"
     },
-    icon:{
-        
+    icon: {
+
     }
 });
