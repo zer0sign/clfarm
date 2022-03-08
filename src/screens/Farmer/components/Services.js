@@ -1,32 +1,39 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet,TouchableOpacity } from "react-native";
+import { Ionicons, AntDesign, FontAwesome, MaterialIcons } from '@expo/vector-icons';
+
 export default function Services(props) {
     return (
-        <View>
-            <View style={styles.header}>
-                <View>
-                    <Text style={{ color: "white", fontWeight: "bold", fontSize: 14 }}>{props.title}</Text>
-                </View>
-                <View>
-                    <Image
-                        style={styles.icon}
-                        source={require(`../../../assets/noto_goat.png`)}
-                    />
-                </View>
-            </View>
+        <View style={styles.container}>
+            <TouchableOpacity style={styles.menu}>
+                <MaterialIcons name="grass" size={60} color={'#50E194'}/>
+                <Text style={{ fontWeight: "500", color: "#50E194" }}>Feed</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.menu}>
+                <FontAwesome name="stethoscope" size={60} color={'#50E194'} />
+                <Text style={{ fontWeight: "500", color: "#50E194" }}>Kesehatan</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.menu}>
+                <Ionicons name="stats-chart" size={60} color={'#50E194'} />
+                <Text style={{ fontWeight: "500", color:"#50E194"}}>Laporan</Text>
+            </TouchableOpacity>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    header: {
-        width: 150,
-        padding: 10,
-        borderRadius: 10,
+    container: {
         flexDirection: "row",
         justifyContent: "space-between"
     },
-    icon: {
-
+    menu:{
+        flexDirection:"column",
+        alignItems:"center",
+        width:95,
+        paddingVertical:20,
+        backgroundColor:"white",
+        borderRadius:10
     }
 });

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons, AntDesign, FontAwesome } from '@expo/vector-icons';
+import { Ionicons, AntDesign, FontAwesome, MaterialIcons } from '@expo/vector-icons';
 const Tab = createBottomTabNavigator();
 
 

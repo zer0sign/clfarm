@@ -5,6 +5,8 @@ import { View, Text, Image, StyleSheet, TextInput, KeyboardAvoidingView, Touchab
 // components
 import Header from '../../components/Header';
 import CardUser from '../../components/CardUser';
+import Services from './components/Services';
+
 export default function Home({ navigation }) {
     return (
         <View style={styles.container}>
@@ -39,6 +41,10 @@ export default function Home({ navigation }) {
                     </View>
                 </View>
                 
+            </View>
+            <View>
+                <Text style={{ marginVertical: 10, fontWeight: "bold",fontSize:20, color:"#333333"}}>Services</Text>
+                <Services />
             </View>
         </View>
     )
