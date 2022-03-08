@@ -1,14 +1,37 @@
 import React from "react";
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Ionicons, AntDesign, FontAwesome, MaterialIcons } from '@expo/vector-icons';
-const Tab = createBottomTabNavigator();
 
+const Tab = createBottomTabNavigator();
+const AnimalStack = createNativeStackNavigator();
 
 import Home from "../screens/Farmer/Home";
-import Animal from "../screens/Farmer/Animal";
+
+
+import Animal from "../screens/Farmer/AnimalPages/Animal";
+import DetailAnimal from "../screens/Farmer/AnimalPages/Detail";
+
+
 import CustomerService from "../screens/Farmer/CustomerService";
 import Profile from "../screens/Farmer/Profile";
+
+
+
+
+function AnimalPage(){
+    return (
+        <AnimalStack.Navigator>
+            <AnimalStack.Screen
+                options={{ headerShown: false }}
+            name="Animal" component={Animal} />
+            <AnimalStack.Screen name="Details" component={DetailAnimal} />
+        </AnimalStack.Navigator>
+    );
+}
+
+
 export const AppStackFarmer = () => {
     return (
         <Tab.Navigator
@@ -36,7 +59,7 @@ export const AppStackFarmer = () => {
                 tabBarIcon: ({ color, size }) => (
                     <Ionicons name="ios-paw" size={size} color={color} />
                 )
-            }} name="Ternak" component={Animal} />
+            }} name="Ternak" component={AnimalPage} />
 
             <Tab.Screen options={{
                 headerShown: false,

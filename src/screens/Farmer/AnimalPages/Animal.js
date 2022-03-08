@@ -3,15 +3,15 @@ import { View, Text, Image, StyleSheet, TextInput, KeyboardAvoidingView, Touchab
 
 
 // components
-import Header from '../../components/Header';
-import ListAnimal from '../Farmer/components/ListAnimal'
+import Header from '../../../components/Header';
+import ListAnimal from '../components/ListAnimal'
 export default function Animal({ navigation }) {
     return (
         <View style={styles.container}>
             <Header />
 
             <View style={{paddingTop:20}}>
-                <ListAnimal />
+                <ListAnimal navigation={navigation}/>
             </View>
             
         </View>

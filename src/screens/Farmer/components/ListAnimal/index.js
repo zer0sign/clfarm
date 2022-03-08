@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import { Ionicons, AntDesign, FontAwesome, MaterialIcons } from '@expo/vector-icons';
 
-export default function Index(props) {
+export default function Index({ navigation }) {
     return (
         <View style={styles.Card}>
             <View >
@@ -21,7 +21,9 @@ export default function Index(props) {
                     <Ionicons name="bar-chart" size={27} color="#50E194" />
                 </TouchableOpacity>
 
-                <TouchableOpacity>
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('Details')}
+                >
                     <Ionicons name="paw" size={27} color="#50E194" />
                 </TouchableOpacity>
             </View>
