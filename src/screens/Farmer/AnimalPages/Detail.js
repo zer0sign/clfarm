@@ -7,7 +7,7 @@ import Header from '../../../components/Header';
 import ListAnimal from '../components/ListAnimal'
 export default function Detail({ navigation }) {
     return (
-        <View>
+        <View style={{backgroundColor:'black'}}>
                 <Image
                     style={styles.image}
                     source={require('../../../assets/goat.png')}
@@ -75,7 +75,9 @@ export default function Detail({ navigation }) {
                 </View>
 
                 {/* button */}
-                <TouchableOpacity style={styles.loginButton}>
+                <TouchableOpacity style={styles.loginButton}
+                onPress = {()=> navigation.navigate('History')}
+                >
                     <Text style={{ textAlign: 'center', color: "white", fontWeight: "bold" }}>History</Text>
                 </TouchableOpacity>
             </View>

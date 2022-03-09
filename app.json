@@ -3,11 +3,14 @@
     "name": "CLfarm",
     "slug": "CLfarm",
     "splash": {
-  "image": "./src/assets/Splash-Screen.png"
-},
+      "image": "./src/assets/Splash-Screen.png"
+    },
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.zerosign.CLfarm"
+    }
   }
 }

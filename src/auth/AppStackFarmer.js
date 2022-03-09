@@ -12,6 +12,8 @@ import Home from "../screens/Farmer/Home";
 
 import Animal from "../screens/Farmer/AnimalPages/Animal";
 import DetailAnimal from "../screens/Farmer/AnimalPages/Detail";
+import HistoryAnimal from "../screens/Farmer/AnimalPages/History";
+
 
 
 import CustomerService from "../screens/Farmer/CustomerService";
@@ -27,6 +29,7 @@ function AnimalPage(){
                 options={{ headerShown: false }}
             name="Animal" component={Animal} />
             <AnimalStack.Screen name="Details" component={DetailAnimal} />
+            <AnimalStack.Screen name="History" component={HistoryAnimal} />
         </AnimalStack.Navigator>
     );
 }
