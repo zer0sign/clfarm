@@ -2,10 +2,12 @@ import React from "react";
 import { View, Text, Image, StyleSheet,TouchableOpacity } from "react-native";
 import { Ionicons, AntDesign, FontAwesome, MaterialIcons } from '@expo/vector-icons';
 
-export default function Services(props) {
+export default function Services({navigation}) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.menu}>
+            <TouchableOpacity style={styles.menu}
+                onPress={() => { navigation.navigate('Animal') }}
+            >
                 <MaterialIcons name="grass" size={60} color={'#50E194'}/>
                 <Text style={{ fontWeight: "500", color: "#50E194" }}>Feed</Text>
             </TouchableOpacity>

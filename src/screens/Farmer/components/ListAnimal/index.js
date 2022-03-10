@@ -13,11 +13,15 @@ export default function Index({ navigation }) {
             </View>
 
             <View style={styles.menu}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('ScanBarcode')}
+                >
                     <Ionicons name="scan-circle-sharp" size={35} color="#50E194" />
                 </TouchableOpacity>
 
-                <TouchableOpacity>
+                <TouchableOpacity
+                    
+                >
                     <Ionicons name="bar-chart" size={27} color="#50E194" />
                 </TouchableOpacity>
 

@@ -13,7 +13,7 @@ import Home from "../screens/Farmer/Home";
 import Animal from "../screens/Farmer/AnimalPages/Animal";
 import DetailAnimal from "../screens/Farmer/AnimalPages/Detail";
 import HistoryAnimal from "../screens/Farmer/AnimalPages/History";
-
+import ScanBarcode from "../screens/Farmer/AnimalPages/ScanBarcode";
 
 
 import CustomerService from "../screens/Farmer/CustomerService";
@@ -30,6 +30,7 @@ function AnimalPage(){
             name="Animal" component={Animal} />
             <AnimalStack.Screen name="Details" component={DetailAnimal} />
             <AnimalStack.Screen name="History" component={HistoryAnimal} />
+            <AnimalStack.Screen name="ScanBarcode" component={ScanBarcode} />
         </AnimalStack.Navigator>
     );
 }

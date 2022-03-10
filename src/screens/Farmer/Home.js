@@ -44,7 +44,7 @@ export default function Home({ navigation }) {
             </View>
             <View>
                 <Text style={{ marginVertical: 10, fontWeight: "bold",fontSize:20, color:"#333333"}}>Services</Text>
-                <Services />
+                <Services navigation={navigation}/>
             </View>
         </View>
     )
