@@ -6,7 +6,7 @@ export default function Services({navigation}) {
     return (
         <View style={styles.container}>
             <TouchableOpacity style={styles.menu}
-                onPress={() => { navigation.navigate('Animal') }}
+                onPress={() => { alert('ok') }}
             >
                 <MaterialIcons name="grass" size={60} color={'#50E194'}/>
                 <Text style={{ fontWeight: "500", color: "#50E194" }}>Feed</Text>
