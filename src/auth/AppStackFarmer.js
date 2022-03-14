@@ -15,6 +15,8 @@ import DetailAnimal from "../screens/Farmer/AnimalPages/Detail";
 import HistoryAnimal from "../screens/Farmer/AnimalPages/History";
 import ScanBarcode from "../screens/Farmer/AnimalPages/ScanBarcode";
 import FormFeed from "../screens/Farmer/AnimalPages/FormFeed";
+import SuccessFeed from "../screens/Farmer/AnimalPages/SuccessFeed";
+
 
 import CustomerService from "../screens/Farmer/CustomerService";
 import Profile from "../screens/Farmer/Profile";
@@ -32,6 +34,7 @@ function AnimalPage(){
             <AnimalStack.Screen name="History" component={HistoryAnimal} />
             <AnimalStack.Screen name="ScanBarcode" component={ScanBarcode} />
             <AnimalStack.Screen name="FormFeed" component={FormFeed} />
+            <AnimalStack.Screen name="SuccessFeed" component={SuccessFeed} />
         </AnimalStack.Navigator>
     );
 }

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import {View,Image, Text,StyleSheet,TouchableOpacity} from 'react-native'
 
 
-export default function FormFeed() {
+export default function FormFeed({navigation}) {
 
     const [isGrass, setGrass] = useState(false);
     const [isLeaf, setLeaf] = useState(false);
@@ -74,7 +74,9 @@ return (
             <Text style={styles.paragraph}>Ya</Text>
         </View>
 
-        <TouchableOpacity style={styles.loginButton}>
+        <TouchableOpacity style={styles.loginButton}
+        onPress={()=>{navigation.navigate('SuccessFeed')}}
+        >
             <Text style={{ textAlign: 'center', color: "white", fontWeight: "bold" }}>Beri Makan</Text>
         </TouchableOpacity>
     </View>
