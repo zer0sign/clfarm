@@ -20,7 +20,7 @@ export default function Index({ navigation }) {
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                    
+                    onPress={() => navigation.navigate('Statistic')}
                 >
                     <Ionicons name="bar-chart" size={27} color="#50E194" />
                 </TouchableOpacity>
